@@ -10,36 +10,36 @@ int main(int argc, char *argv[]) {
   for(i = 0; argv[1][i] != '\0'; i++) {
     char letter = argv[1][i];
 
-    printf("%c %d \n", letter, letter);
+    // 32 diff mellan stora och små bokstäver,
+    // men hur vet jag om det är en bokstav ens?
+    // asciikoderna för A är 65 och ascii koden för Z är 90
+    // bara alfabetet mellan
+    if (letter >= 65 && letter <= 90) {
+      letter += 32;
+    }
 
     switch(letter) {
     case 'a':
-    case 'A':
       printf("%d: 'A'\n", i);
       break;
 
     case 'e':
-    case 'E':
       printf("%d: 'E'\n", i);
       break;
 
     case 'i':
-    case 'I':
       printf("%d: 'I'\n", i);
       break;
 
     case 'o':
-    case 'O':
       printf("%d: 'O'\n", i);
       break;
 
     case 'u':
-    case 'U':
       printf("%d: 'U'\n", i);
       break;
 
     case 'y':
-    case 'Y':
       if(i > 2) {
         printf("%d: 'Y'\n", i);
       }
