@@ -1,12 +1,19 @@
 #include <stdio.h>
+#include <stdint.h>
 
 int main(int argc, char *argv[]) {
 
-  int n = 4;
+  int8_t n = 4;
   printf("%d %lu \n", n, sizeof(n));
   n >>= 1;
   printf("%d %lu \n", n, sizeof(n));
   n >>= 1;
+  printf("%d %lu \n", n, sizeof(n));
+  n <<= 1;
+  printf("%d %lu \n", n, sizeof(n));
+  n <<= 1;
+  printf("%d %lu \n", n, sizeof(n));
+  n <<= 1;
   printf("%d %lu \n", n, sizeof(n));
   n <<= 1;
   printf("%d %lu \n", n, sizeof(n));
