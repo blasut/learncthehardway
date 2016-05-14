@@ -12,11 +12,8 @@ struct Person {
 };
 
 struct Person Person_create(char *name, int age, int height, int weight) {
-  // allocates memory for the total size of the struct
   struct Person who;
 
-  // duplicate string, because memory?
-  // to make sure the struct has its own version of the string
   who.name = name;
   who.age  = age;
   who.height = height;
@@ -35,8 +32,9 @@ void Person_print(struct Person who) {
 int main(int argc, char *argv[]) {
   // make two people structures
   struct Person joe = Person_create("Joe Alex", 32, 64, 140);
-
   struct Person frank = Person_create("Frank Blank", 20, 72, 180);
+
+  // on the stack baby
 
   printf("Joe is at memory location %p:\n", joe);
   Person_print(joe);
