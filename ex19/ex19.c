@@ -142,7 +142,7 @@ int process_input(Map *game) {
 
   switch(ch) {
   case -1:
-    printf("Giving up?");
+    printf("Giving up?\n");
     return 0;
     break;
 
