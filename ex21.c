@@ -5,6 +5,7 @@ int main(int argc, char *argv[]) {
 
   int8_t n = 4;
   printf("%d %lu \n", n, sizeof(n));
+  printf("%p \n", &n);
   n >>= 1;
   printf("%d %lu \n", n, sizeof(n));
   n >>= 1;
