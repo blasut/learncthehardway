@@ -1,3 +1,4 @@
+CC=gcc
 CFLAGS=-Wall -Wextra -Wpedantic -fno-strict-aliasing -g
 
 all:
